@@ -1,7 +1,7 @@
 const express = require('express')
 
 const app = express()
-const port = process.argv[2] || 8000
+const port = 8080
 
 app.get('/', (req, res) => {
   res.send('Hello AWS')
