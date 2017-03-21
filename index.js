@@ -22,7 +22,6 @@ const getRandomItem = arr => arr[Math.floor(Math.random() * arr.length)]
 
 const writeData = (data, cb) => fs.writeFile(file, JSON.stringify(data), (err, res) => {
   if (err) { return console.error(err) }
-  console.log('res', res)
   cb()
 })
 
