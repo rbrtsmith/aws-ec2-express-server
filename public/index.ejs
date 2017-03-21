@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arnold Quotes</title>
+</head>
+<body>
+  <h1>Arnold quotes</h1>
+  <ul>
+    <% quotes.forEach(function(quote) { %>
+      <li>
+        <a href="quote/<%= quote.path %>">
+          <%= quote.quote %>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+  <p><a href="/random-quote">Random quote</a></p>
+  <p><a href="add-quote">Add quote</a></p>
+</body>
+</html>

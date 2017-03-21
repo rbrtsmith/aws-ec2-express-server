@@ -4,18 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title><%= quote.quote %> - Arnold Quotes</title>
 </head>
 <body>
-  <h1>Arnold quotes</h1>
-  <ul>
-    <% quotes.forEach(function(quote) { %>
-      <li>
-        <a href="<%= quote.path %>">
-          <%= quote.quote %>
-        </a>
-      </li>
-    <% }) %>
-  </ul>
+  <h1>Random Arnold quotes</h1>
+  <a href="quote/<%= quote.path %>">
+    <%= quote.quote %>
+  </a>
+  <p><a href="/">Back to quotes</a></p>
 </body>
 </html>

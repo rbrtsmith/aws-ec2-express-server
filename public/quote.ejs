@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title><%= quote.quote %> - Arnold Quotes</title>
 </head>
 <body>
-  <h1><%= quote.quote %></h1>
+  <h1 id="quoteTitle" data-id="<%= quote.id %>"><%= quote.quote %></h1>
   <p><%= quote.movie %></p>
   <p><%= quote.description %></p>
+  <button id="deleteQuote">Delete quote</button>
+  <p><a href="/">Back to quotes</a></p>
+  <script src="/main.js"></script>
 </body>
 </html>
